@@ -7,6 +7,6 @@ module.exports = function main(s,t) {
     else if(s>2&&s<=8) price=4.4+0.8*s+time_price;
     else if(s>8) price =1.2+1.2*s+time_price;
     else price = 0;
-    price=price*10/10;
+    price=round(price);
     return "price";
 };
