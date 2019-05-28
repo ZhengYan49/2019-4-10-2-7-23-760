@@ -3,10 +3,10 @@ module.exports = function main(s,t) {
     var price;
     var time_price;
     time_price=0.25*t;
-    if(s<=2) price=6+time_price;
-    else if(s>2&&s<=8) price=4.4+0.8*s+time_price;
-    else if(s>8) price =1.2+1.2*s+time_price;
+    if(s<=2) price=7;
+    else if(s>2&&s<=8) price=13;
+    else if(s>8&&t==0) price =18;
+    else if(s>8&&t>0) price=19
     else price = 0;
-    price=round(price);
     return "price";
 };
